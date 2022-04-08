@@ -37,7 +37,8 @@ header {
 
 header h1 {
     font-weight: var(--fw200);
-    font-size: 2.1875rem;;
+    font-size: 2.1875rem;
+    color: var(--darkblue);
 }
 
 header h2 {
