@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --darkblue: hsl(234, 12%, 34%);
+    --grayishblue: hsl(229, 6%, 66%);
+    --lightgray: hsl(0, 0%, 98%);
+    --fw200: 200;
+    --fw400: 400;
+    --fw600: 600;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: var(--lightgray);
+}
+
+header {
+    text-align: center;
+    margin-top: 3.75rem;
+    max-width: 31.25rem;
+    margin-inline: auto;
+}
+
+header h1 {
+    font-weight: var(--fw200);
+    font-size: 2.1875rem;;
+}
+
+header h2 {
+    font-size: 2.1875rem;
+    margin-bottom: 1.25rem;
+    color: var(--darkblue);
+}
+
+header p {
+    font-size: .9375rem;
+    color: var(--grayishblue);
+}
+
+
+.card-container {
+    gap: 1.5625rem;
+    margin-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    display: flex;
+  }
+
+  .card-container div {
+    border-radius: .625rem;
+  }
+
+  .card-container div img {
+      margin-top: 3.125rem;
+      margin-left: auto;
+      display: block;
+  }
+  
+  .card-container div:not(.card-column-container) {
+      padding-top: 1.5625rem;
+      padding-bottom: 1.875rem;
+      padding-inline: 1.875rem;
+      box-shadow: 0 .625rem 1.25rem rgba(0, 0, 0, 0.05), 0 .375rem .375rem rgba(0, 0, 0, 0.1);
+      max-width: 22.5rem;
+  }
+
+  .card-container div h3 {
+      font-size: 1.375rem;
+      margin-bottom: .625rem;
+      color: var(--darkblue);
+  }
+
+  .card-container div p {
+      color: var(--grayishblue);
+      font-size: .875rem;
+  }
+  
+  .card1, .card4 {
+    align-self: center;
+  }
+  
+  .card1 {
+      border-top: .3125rem solid var(--cyan);
+      margin-right: .3125rem;
+  }
+
+  .card4 {
+      margin-left: .3125rem;
+  }
+  
+  
+  .card-column-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+  }
+
+  .card2 {
+      border-top: .3125rem solid var(--red);
+  }
+
+  .card3 {
+      border-top: .3125rem solid var(--orange);
+  }
+
+  .card4 {
+      border-top: .3125rem solid var(--blue);
+  }
+
+
+  @media (max-width: 71.25em) {
+
+    body {
+        margin: 2.5em;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    header h1, header h2 {
+        font-size: 1.4375em;
+    }
+      .card-container {
+          display: flex;
+          flex-direction: column;
+          gap: initial;
+      }
+
+      .card-column-container {
+          display: initial;
+      }
+
+
+     .card1, .card4 {
+         align-self: initial;
+         margin-right: initial;
+         margin-left: initial;
+     }
+
+     .card-container div:not(.card-column-container) {
+         max-width: initial;
+         margin-bottom: 1.25em;
+     }
+  }
+  
+  
+  
